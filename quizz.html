@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Quizz Informatique</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="parcours.html">Parcours</a></li>
+            <li><a href="competences.html">Compétences</a></li>
+            <li><a href="experiences.html">Expériences</a></li>
+            <li><a href="manifestations.html">Manifestations</a></li>
+            <li><a href="matieres.html">Matières</a></li>
+            <li><a href="passions.html">Passions</a></li>
+            <li><a href="quizz.html" class="active">Quizz</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="temoignage.html">Témoignage IIT</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section>
+        <h2>Répondez aux questions</h2>
+<form id="quizForm">
+
+    <p>1. Qu’est-ce que l’intelligence artificielle (IA) ?</p>
+    <div class="option"><input type="radio" name="q1" value="a"> Une technologie qui permet aux machines d’imiter l’intelligence humaine</div>
+    <div class="option"><input type="radio" name="q1" value="b"> Un langage de programmation</div>
+    <div class="option"><input type="radio" name="q1" value="c"> Un système d’exploitation</div>
+
+    <p>2. Le machine learning est</p>
+    <div class="option"><input type="radio" name="q2" value="a"> Un type de matériel informatique</div>
+    <div class="option"><input type="radio" name="q2" value="b"> Une branche de l’IA basée sur l’apprentissage à partir des données</div>
+    <div class="option"><input type="radio" name="q2" value="c"> Un logiciel de traitement de texte</div>
+
+    <p>3. Quelle donnée est la plus importante pour entraîner un modèle d’IA ?</p>
+    <div class="option"><input type="radio" name="q3" value="a"> Données nombreuses et de qualité</div>
+    <div class="option"><input type="radio" name="q3" value="b"> Données sans erreur humaine</div>
+    <div class="option"><input type="radio" name="q3" value="c"> Données aléatoires</div>
+
+    <p>4. Différence entre apprentissage supervisé et non supervisé ?</p>
+    <div class="option"><input type="radio" name="q4" value="a"> Le type de données utilisées</div>
+    <div class="option"><input type="radio" name="q4" value="b"> La présence ou non de données étiquetées</div>
+    <div class="option"><input type="radio" name="q4" value="c"> Le nombre d’algorithmes utilisés</div>
+
+    <p>5. Rôle des couches de convolution dans un CNN :</p>
+    <div class="option"><input type="radio" name="q5" value="a"> Réduire le bruit audio</div>
+    <div class="option"><input type="radio" name="q5" value="b"> Extraire automatiquement des caractéristiques</div>
+    <div class="option"><input type="radio" name="q5" value="c"> Classer directement les images</div>
+
+    <button type="button" onclick="corriger()">Valider</button>
+
+</form>
+
+
+        <div id="resultat"></div>
+    </section>
+</main>
+
+<script src="quizz.js"></script>
+
+<footer>
+    <p>&copy; 2025 - Wafa Katar</p>
+</footer>
+
+</body>
+</html>
